@@ -14,5 +14,13 @@ spec:
       protocol: TCP
       port: 22
       targetPort: 22
+    - name: localui
+      protocol: TCP
+      port: 8443
+      targetPort: 8443
+    - name: iotviz
+      protocol: TCP
+      port: 8843
+      targetPort: 8843
   type: LoadBalancer
 {{- end }}
